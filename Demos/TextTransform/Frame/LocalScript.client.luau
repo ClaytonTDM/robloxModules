@@ -8,7 +8,7 @@ script.Parent.TextButton.MouseButton1Click:Connect(function()
 		return
 	end
 	db = false
-	script.Parent.TextLabel.Text = "Transforming..."
+	script.Parent.TextButton.Text = "Transforming..."
 	module.TransformText(script.Parent.TextLabel)
-	script.Parent.TextLabel.Text = "Transformed!"
+	script.Parent.TextButton.Text = "Transformed!"
 end)
