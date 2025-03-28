@@ -55,12 +55,12 @@ function module.TransformText(labelToTransform: TextLabel): Frame
 	layout.VerticalAlignment =
 		Y_ALIGNMENT_MAP[originalYAlignment] or Enum.VerticalAlignment.Top
 	layout.SortOrder = Enum.SortOrder.LayoutOrder
-	layout.Parent = listFrame -- Parent layout immediately
+	layout.Parent = listFrame
 
 	local spaceParams = Instance.new("GetTextBoundsParams")
 	spaceParams.Font = originalFontFace
 	spaceParams.Size = originalTextSize
-	spaceParams.Text = " " -- Single space character
+	spaceParams.Text = " "
 	local spaceSize: Vector2 = TextService:GetTextBoundsAsync(spaceParams)
 
 	local charParams = Instance.new("GetTextBoundsParams")
@@ -68,7 +68,7 @@ function module.TransformText(labelToTransform: TextLabel): Frame
 	charParams.Size = originalTextSize
 
 	local textLength = utf8.len(originalText)
-	local childrenToParent = table.create(textLength) -- Pre-allocate table
+	local childrenToParent = table.create(textLength)
 	local childIndex = 0
 
 	for char in string.gmatch(originalText, ".") do
