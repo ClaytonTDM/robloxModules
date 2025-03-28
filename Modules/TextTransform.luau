@@ -1,9 +1,7 @@
 --!optimize 2
 --!strict
-
-local module = {}
-
 local TextService = game:GetService("TextService")
+local module = {}
 
 local X_ALIGNMENT_MAP = {
 	[Enum.TextXAlignment.Left] = Enum.HorizontalAlignment.Left,
