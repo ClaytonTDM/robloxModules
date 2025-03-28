@@ -1,0 +1,12 @@
+{
+  "name": "robloxModules",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$path": "Modules"
+    },
+    "StarterGui": {
+      "$path": "Demos"
+    }
+  }
+}

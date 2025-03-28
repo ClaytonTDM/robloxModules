@@ -1,0 +1,19 @@
+{
+  "className": "TextLabel",
+  "properties": {
+    "BackgroundColor3": [1, 1, 1],
+    "BorderColor3": [0, 0, 0],
+    "BorderSizePixel": 0,
+    "FontFace": {
+      "family": "rbxasset://fonts/families/SourceSansPro.json",
+      "weight": "Regular",
+      "style": "Normal",
+      "cachedFaceId": null
+    },
+    "Size": [[1.0, 0.0], [1.0, 0.0]],
+    "Text": "bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! bonjour! ",
+    "TextColor3": [0, 0, 0],
+    "TextSize": 14,
+    "TextWrapped": true
+  }
+}
