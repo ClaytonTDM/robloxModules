@@ -39,20 +39,15 @@ function module.CreateFrameFromLabel(labelTemplate: TextLabel): Frame
 	listFrame.BackgroundTransparency = 1
 	listFrame.ClipsDescendants = true
 	listFrame:SetAttribute("OriginalBackgroundColor3", originalBackgroundColor3)
-	listFrame:SetAttribute(
-		"OriginalBackgroundTransparency",
-		originalBackgroundTransparency
-	)
+	listFrame:SetAttribute("OriginalBackgroundTransparency", originalBackgroundTransparency)
 	listFrame:SetAttribute("OriginalText", originalText)
 
 	local layout = Instance.new("UIListLayout")
 	layout.Name = "LetterLayout"
 	layout.FillDirection = Enum.FillDirection.Horizontal
 	layout.Wraps = true
-	layout.HorizontalAlignment =
-		X_ALIGNMENT_MAP[originalXAlignment] or Enum.HorizontalAlignment.Left
-	layout.VerticalAlignment =
-		Y_ALIGNMENT_MAP[originalYAlignment] or Enum.VerticalAlignment.Top
+	layout.HorizontalAlignment = X_ALIGNMENT_MAP[originalXAlignment] or Enum.HorizontalAlignment.Left
+	layout.VerticalAlignment = Y_ALIGNMENT_MAP[originalYAlignment] or Enum.VerticalAlignment.Top
 	layout.SortOrder = Enum.SortOrder.LayoutOrder
 	layout.Parent = listFrame
 
@@ -70,8 +65,7 @@ function module.TransformText(labelToTransform: TextLabel): Frame
 	local originalTextColor = labelToTransform.TextColor3
 	local originalTextTransparency = labelToTransform.TextTransparency
 	local originalTextStrokeColor = labelToTransform.TextStrokeColor3
-	local originalTextStrokeTransparency =
-		labelToTransform.TextStrokeTransparency
+	local originalTextStrokeTransparency = labelToTransform.TextStrokeTransparency
 	local originalXAlignment = labelToTransform.TextXAlignment
 	local originalBackgroundColor3 = labelToTransform.BackgroundColor3
 	local originalBackgroundTransparency = labelToTransform.BackgroundTransparency
@@ -85,10 +79,7 @@ function module.TransformText(labelToTransform: TextLabel): Frame
 	listFrame:SetAttribute("LetterTextColor3", originalTextColor)
 	listFrame:SetAttribute("LetterTextTransparency", originalTextTransparency)
 	listFrame:SetAttribute("LetterTextStrokeColor3", originalTextStrokeColor)
-	listFrame:SetAttribute(
-		"LetterTextStrokeTransparency",
-		originalTextStrokeTransparency
-	)
+	listFrame:SetAttribute("LetterTextStrokeTransparency", originalTextStrokeTransparency)
 	listFrame:SetAttribute("LetterTextXAlignment", originalXAlignment)
 
 	local spaceParams = Instance.new("GetTextBoundsParams")
@@ -139,8 +130,7 @@ function module.TransformText(labelToTransform: TextLabel): Frame
 			charLabel.TextColor3 = originalTextColor
 			charLabel.TextTransparency = originalTextTransparency
 			charLabel.TextStrokeColor3 = originalTextStrokeColor
-			charLabel.TextStrokeTransparency =
-				originalTextStrokeTransparency
+			charLabel.TextStrokeTransparency = originalTextStrokeTransparency
 			charLabel.BackgroundTransparency = 1
 			charLabel.Size = UDim2.fromScale(1, 1)
 			charLabel.Text = char
@@ -168,39 +158,31 @@ end
 -- Inserts a new letter (<code>Frame</code>) into the <code>listFrame</code> at the specified index.
 -- Adjusts <code>LayoutOrder</code> of subsequent letters.
 -- Returns the newly created letter <code>Frame</code> or <code>nil</code> if attributes are missing.
-function module.InsertLetter(
-	listFrame: Frame,
-	letter: string,
-	index: number
-): Frame?
+function module.InsertLetter(listFrame: Frame, letter: string, index: number): Frame?
 	local fontFace = listFrame:GetAttribute("LetterFontFace") :: Font?
 	local textSize = listFrame:GetAttribute("LetterTextSize") :: number?
 	local textColor = listFrame:GetAttribute("LetterTextColor3") :: Color3?
-	local textTransparency =
-		listFrame:GetAttribute("LetterTextTransparency") :: number?
-	local textStrokeColor =
-		listFrame:GetAttribute("LetterTextStrokeColor3") :: Color3?
-	local textStrokeTransparency =
-		listFrame:GetAttribute("LetterTextStrokeTransparency") :: number?
-	local textXAlignment =
-		listFrame:GetAttribute("LetterTextXAlignment") :: Enum.TextXAlignment?
+	local textTransparency = listFrame:GetAttribute("LetterTextTransparency") :: number?
+	local textStrokeColor = listFrame:GetAttribute("LetterTextStrokeColor3") :: Color3?
+	local textStrokeTransparency = listFrame:GetAttribute("LetterTextStrokeTransparency") :: number?
+	local textXAlignment = listFrame:GetAttribute("LetterTextXAlignment") :: Enum.TextXAlignment?
 	local spaceSizeX = listFrame:GetAttribute("SpaceSizeX") :: number?
 	local spaceSizeY = listFrame:GetAttribute("SpaceSizeY") :: number?
 
-	if not (
+	if
+		not (
 			fontFace
-				and textSize
-				and textColor
-				and textTransparency
-				and textStrokeColor
-				and textStrokeTransparency
-				and textXAlignment
-				and spaceSizeX
-				and spaceSizeY
-	) then
-		warn(
-			"Cannot InsertLetter: listFrame is missing required style attributes."
+			and textSize
+			and textColor
+			and textTransparency
+			and textStrokeColor
+			and textStrokeTransparency
+			and textXAlignment
+			and spaceSizeX
+			and spaceSizeY
 		)
+	then
+		warn("Cannot InsertLetter: listFrame is missing required style attributes.")
 		return nil
 	end
 
