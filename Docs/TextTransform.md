@@ -51,7 +51,7 @@ Intended to be used with [`InsertLetter`](#insertletter).
 
 ### `InsertLetter`
 
-`InsertLetter(frame: Frame, letter: string, index: number)` → `Frame`
+`InsertLetter(listFrame: Frame, letter: string, index: number)` → `Frame`
 
 Inserts a new letter (`Frame`) into the `listFrame` at the specified index.
 Adjusts `LayoutOrder` of subsequent letters.
