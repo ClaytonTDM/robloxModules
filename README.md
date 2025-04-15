@@ -4,8 +4,7 @@ General purpose modules for Roblox development. These modules are designed to be
 
 ## Modules
 
-- TextTransform
-  - Transforms a `TextLabel` into a `Frame` with many children for easy manipulation of letters. Letter index is stored in `LayoutOrder` for each `Frame`.
+- [TextTransform](Docs/TextTransform.md): Transform text in a way that makes it easy to manipulate individual characters.
 
 ---
 
