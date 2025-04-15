@@ -31,7 +31,7 @@ Stores necessary style information as attributes on the returned `Frame`.
 `CreateFrameFromLabel(labelTemplate: TextLabel)` → `Frame`
 
 Creates a `Frame` from a `TextLabel` for easy manipulation of letters.
-Intended to be used with [`InsertLetter`](#InsertLetter).
+Intended to be used with [`InsertLetter`](#insertletter).
 
 #### Parameters
 
