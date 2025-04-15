@@ -2,7 +2,9 @@
 
 Transform text in a way that makes it easy to manipulate individual characters.
 
-## Methods
+[![Get it on Roblox](assets/roblox_dev-animated.svg)](https://create.roblox.com/store/asset/95498974358575/TextTransform)
+
+## Methods	
 
 ### `TransformText`
 
